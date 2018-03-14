@@ -1,0 +1,47 @@
+stuarthadfield.com
+=========
+
+Stuart Hadfield
+Full-Stack Developer
+
+Languages Proficient:
+
+* Ruby / Ruby on Rails
+* Python / Django
+* C / C++
+* JS / React
+
+Contact
+-------
+
+* stuartdhadfield at gmail dot com
+* stuart.hadfield at zappistore dot com
+* stuarthadfield on github.com
+* @stuart on ZATech Slack community
+
+Education
+--------
+
+University:
+
+* University of Cape Town
+* First Class Honours, Electrical + Computer Engineering
+
+High School
+
+* Michaelhouse
+* Matric with distinction
+
+Open Source Projects
+--------
+
+* Whismur (Audio analysis ML python library)
+* Theia (Extensible python machine vision library)
+* Robbibot (chatbot for ordering coffee)
+
+And of course...
+
+* www.stuarthadfield.github.io
+* www.stuarthadfield.com
+
+Get in touch if you'd like to chat about any of those.

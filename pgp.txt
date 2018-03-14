@@ -1,0 +1,7 @@
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+foo
+-----END PGP PUBLIC KEY BLOCK-----
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+bar
+-----END PGP PUBLIC KEY BLOCK-----

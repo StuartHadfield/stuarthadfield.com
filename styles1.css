@@ -1,0 +1,24 @@
+
+/**
+ * That markdown on the left is outright gross.
+ * We can fix this by rendering it.
+ */
+
+#work-text.flipped {
+  -webkit-transform: rotateX(0deg) rotateY(190deg) rotateZ(180deg);
+}
+
+#work-text .md {
+  -webkit-transform: rotateY(190deg) rotateZ(180deg);
+  margin-top: 800px;
+}
+
+/**
+ * Alright. We're ready to render.
+ *
+ * 3...
+ * 2...
+ * 1...
+ *
+ * Liftoff.
+ */

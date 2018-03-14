@@ -1,0 +1,188 @@
+
+/**
+ * The markdown text could use some tweaks.
+ * Helvetica is pretty edgy, right?
+ */
+
+.md {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6 {
+  display: inline-block;
+  color:#ddd;
+  border-bottom: 1px solid#ccc;
+  padding-bottom: 5px;
+}
+
+.md li {
+  margin: 5px 0;
+}
+
+.md h1, .md h2, .md h3, .md h4, .md h5, .md h6, .md ul, .md p {
+  margin: 0px;
+}
+
+/**
+ * That's better!
+ */
+
+/**
+ * Well, thanks for taking the time out to check out this
+ * site. Be sure to contact me if you have any questions,
+ * or if, you know, you just want to chat.
+ *
+ * I'm gonna make you a heart to show you my appreciation
+ * for taking the time out to watch all this.
+ */
+
+#heart, #echo {
+  box-shadow: none;
+  position: fixed;
+  width: 300px; height: 300px;
+  top: calc(68% - 150px); left: calc(25% - 150px);
+  text-align: center;
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+#heart { z-index: 8; }
+#echo  { z-index: 7; }
+
+#heart::before, #heart::after, #echo::before, #echo::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  width: 150px; height: 240px;
+  background:#c66c75;
+  border-radius: 150px 150px 0 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+#heart::before, #echo::before {
+  left: 150px;
+}
+
+#heart::after, #echo::after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+ /**
+ * It needs some depth, huh?
+ */
+
+#heart::after {
+  box-shadow:
+  inset -6px -6px 0px 6px rgba(255,255,255,0.1);
+}
+
+#heart::before {
+  box-shadow:
+  inset 6px 6px 0px 6px rgba(255,255,255,0.1);
+}
+
+ /**
+  * Life isn't measured in minutes, but in heartbeats.
+  */
+
+ @-webkit-keyframes heartbeat {
+   0%, 100% {
+     -webkit-transform: scale(0.95);
+     transform: scale(0.95);
+  }
+   50% {
+     -webkit-transform: scale(1.00);
+     transform: scale(1.00);
+  }
+}
+
+ @keyframes heartbeat {
+   0%, 100% { transform: scale(0.95); }
+   50% { transform: scale(1.00); }
+}
+
+ @-webkit-keyframes echo {
+   0% {
+     opacity: 0.1;
+     -webkit-transform: scale(1);
+     transform: scale(1);
+  }
+   100% {
+     opacity: 0;
+     -webkit-transform: scale(1.4);
+     transform: scale(1.4);
+  }
+}
+
+ @keyframes echo {
+   0% {
+     opacity: 0.1;
+     transform: scale(1);
+  }
+   100% {
+     opacity: 0;
+     transform: scale(1.4);
+  }
+}
+
+
+ /**
+  * Beautiful! You know what they say, if your
+  * heart is beating, you still have time for
+  * your dreams!
+  *
+  * I have a lot of dreams to take care of,
+  * So let's get this heart beating.
+  */
+
+#heart, #echo {
+  -webkit-animation-duration: 2000ms;
+  animation-duration: 2000ms;
+  -webkit-animation-timing-function:
+    cubic-bezier(0, 0, 0, 1.74);
+    animation-timing-function:
+    cubic-bezier(0, 0, 0, 1.74);
+    -webkit-animation-delay: 500ms;
+      animation-delay: 500ms;
+    -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+}
+
+#heart {
+  -webkit-animation-name: heartbeat;
+    animation-name: heartbeat;
+}
+
+#echo {
+  -webkit-animation-name: echo;
+    animation-name: echo;
+}
+
+
+ /*
+  * Ready...
+  */
+
+#heart, #echo {
+
+ /*
+  * ...steady...
+  */
+
+  -webkit-animation-play-state: running;
+    animation-play-state: running;
+
+ /*
+  * ...go!
+  */
+
+}

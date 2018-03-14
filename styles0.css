@@ -1,0 +1,124 @@
+/**
+ * ....
+ * ..
+ *
+ * Hello?
+ *
+ * Is somebody there?
+ *
+ * ...
+ *
+ * Ah! Hello there!
+ *
+ * My name is Stuart Hadfield.
+ *
+ * I'm a software developer based in South Africa.
+ * 
+ * I was just messing about on here when you popped in.
+ * I like building technology, it's how I spend a lot
+ * of my time.
+ *
+ * I guess that doesn't mean anything if I just say it.
+ *
+ * How about I put my money where my mouth is with
+ * some live coding?
+ */
+
+/**
+ * Let's begin. This page is pretty unfriendly.
+ * We're gonna start by making it a bit more easy to work in.
+ */
+
+* {
+  -webkit-transition: all 1s;
+}
+
+/**
+ * That didn't do much...
+ *
+ * But good things come to those who wait.
+ *
+ * Now, I'm no designer, but black on white is really
+ * boring, so let's do something about it.
+ */
+
+html {
+  background-color: #1a1c24; color: #fff;
+}
+
+/**
+ * Hold on...
+ */
+
+pre, a {
+  color: white;
+}
+
+/**
+ * That's better!  Sorry about your eyes.
+ *
+ * We have a looot of space to work in here huh?
+ *
+ * Too much empty room is hard to fill.
+ *
+ * I'm going to make a nice area for us to work in.
+ */
+
+pre:not(:empty) {
+  overflow: auto;
+  background-color: #313744; color: #a6c3d4
+  border: 1px solid #ccc;
+  max-height: 44.6%;
+  width: 49%;
+  font-size: 14px;
+  font-family: monospace;
+  padding: 10px 10px 20px;
+  box-shadow: -4px 4px 2px 0 rgba(0,0,0,0.3);
+  white-space: pre-wrap;
+  outline: 0;
+}
+
+/**
+ * This is good, but all the text is white!
+ * Let's make it even more readable.
+ *
+ * I'm gonna use colours based off the Base16
+ * Ocean Dark theme.
+ */
+
+.comment       { color: #707e84; font-style: italic; }
+.selector      { color: #c66c75; }
+.selector .key { color: #c66c75; }
+.key           { color: #c7ccd4; }
+.value         { color: #d5927b; }
+.value.px      { color: #d4bd77; }
+
+/**
+ * Heeeyyy that doesn't look too bad!
+ * What do you say we get a little perspective?
+ */
+
+#style-text {
+  -webkit-transform: translateX(95%);
+  position: absolute;
+}
+
+body {
+  -webkit-perspective: 1000px;
+}
+
+#style-text {
+  -webkit-transform: translateX(98.5%) rotateY(-10deg);
+  -webkit-transform-origin: right;
+  max-height: 94.5%;
+}
+
+/**
+ * So, let's talk projects. That's why you're here, right?
+ * The colours are fun, but probably not what you're after.
+ */
+
+pre:not(#style-text) {
+  -webkit-transform: rotateY(10deg);
+  -webkit-transform-origin: left;
+}
