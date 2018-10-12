@@ -34,6 +34,8 @@
  *
  * I'm gonna make you a heart to show you my appreciation
  * for taking the time out to watch all this.
+ * It might take me a little while to reconstruct one in
+ * pure CSS. Bear with me ;)
  */
 
 #heart, #echo {
@@ -75,7 +77,7 @@
 }
 
  /**
- * It needs some depth, huh?
+ * It needs some depth doesn't it?
  */
 
 #heart::after {

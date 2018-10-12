@@ -25,9 +25,9 @@ Education
 University:
 
 * University of Cape Town
-* First Class Honours, Electrical + Computer Engineering
+* Electrical + Computer Engineering with Honours
 
-High School
+High School:
 
 * Michaelhouse
 * Matric with distinction
@@ -35,9 +35,10 @@ High School
 Open Source Projects
 --------
 
-* Whismur (Audio analysis ML python library)
-* Theia (Extensible python machine vision library)
-* Robbibot (chatbot for ordering coffee)
+* Whismur (ML powered audio analysis python library)
+* Theia (Extensible machine vision tool written in python)
+* Robbibot (Simple Slack chatbot for ordering coffee)
+* Mandala-Sphero (JS/IOT experiment with Spheros and Mandalas)
 
 And of course...
 
@@ -45,3 +46,4 @@ And of course...
 * www.stuarthadfield.com
 
 Get in touch if you'd like to chat about any of those.
+My CV is readily available [here.](https://github.com/StuartHadfield/curriculum-vitae/blob/master/Curriculum%20Vitae.md)

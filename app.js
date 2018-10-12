@@ -13,7 +13,7 @@ import getPrefix from './lib/getPrefix';
 
 // Vars that will help us get er done
 const isDev = window.location.hostname === 'localhost';
-const speed = isDev ? 12 : 16;
+const speed = isDev ? 8 : 12;
 let style, styleEl, workEl, pgpEl, skipAnimationEl, pauseEl;
 let animationSkipped = false, done = false, paused = false;
 let browserPrefix;
@@ -74,7 +74,6 @@ async function surprisinglyShortAttentionSpan() {
   }
 }
 
-
 /**
  * Helpers
  */
@@ -118,10 +117,8 @@ async function writeTo(el, message, index, interval, mirrorToStyle, charsPerInte
   }
 }
 
-//
 // Older versions of major browsers (like Android) still use prefixes. So we figure out what that prefix is
 // and use it.
-//
 function getBrowserPrefix() {
   // Ghetto per-browser prefixing
   browserPrefix = getPrefix(); // could be empty string, which is fine
@@ -130,9 +127,8 @@ function getBrowserPrefix() {
   });
 }
 
-//
+
 // Put els into the module scope.
-//
 function getEls() {
   // We're cheating a bit on styles.
   let preStyleEl = document.createElement('style');
@@ -148,17 +144,13 @@ function getEls() {
   pauseEl = document.getElementById('pause-resume');
 }
 
-//
 // Create links in header (now footer).
-//
 function populateHeader() {
   let header = document.getElementById('header');
   header.innerHTML = headerHTML;
 }
 
-//
 // Create basic event handlers for user input.
-//
 function createEventHandlers() {
   // Mirror user edits back to the style element.
   styleEl.addEventListener('input', function() {
@@ -183,9 +175,7 @@ function createEventHandlers() {
   });
 }
 
-//
 // Fire a listener when scrolling the 'work' box.
-//
 function createWorkBox() {
   if (workEl.classList.contains('flipped')) return;
   workEl.innerHTML = '<div class="text">' + replaceURLs(workText) + '</div>' +
