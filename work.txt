@@ -2,20 +2,22 @@ stuarthadfield.com
 =========
 
 Stuart Hadfield
-Full-Stack Developer
+Software Development Engineer
 
 Languages Proficient:
+-------
 
 * Ruby / Ruby on Rails
 * Python / Django
-* C / C++
 * JS / React
+* PHP
+* C / C++
 
 Contact
 -------
 
 * stuartdhadfield at gmail dot com
-* stuart.hadfield at zappistore dot com
+* shadfield at gocardless dot com
 * stuarthadfield on github.com
 * @stuart on ZATech Slack community
 
@@ -25,7 +27,7 @@ Education
 University:
 
 * University of Cape Town
-* Electrical + Computer Engineering with Honours
+* B.Sc (Hons) Electrical + Computer Engineering
 
 High School:
 
