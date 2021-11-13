@@ -1,15 +1,15 @@
-import 'classlist-polyfill';
 import Promise from 'bluebird';
+import 'classlist-polyfill';
 import Markdown from 'markdown';
-const md = Markdown.markdown.toHTML;
-import workText from 'raw-loader!./work.txt';
 // import pgpText from 'raw-loader!./pgp.txt';
 import headerHTML from 'raw-loader!./header.html';
-let styleText = [0, 1, 2, 3].map(function(i) { return require('raw-loader!./styles' + i + '.css'); });
 import preStyles from 'raw-loader!./prestyles.css';
-import replaceURLs from './lib/replaceURLs';
-import {default as writeChar, writeSimpleChar, handleChar} from './lib/writeChar';
+import workText from 'raw-loader!./work.txt';
 import getPrefix from './lib/getPrefix';
+import replaceURLs from './lib/replaceURLs';
+import { default as writeChar, handleChar, writeSimpleChar } from './lib/writeChar';
+const md = Markdown.markdown.toHTML;
+let styleText = [0, 1, 2, 3].map(function(i) { return require('raw-loader!./styles' + i + '.css'); });
 
 // Vars that will help us get er done
 const isDev = window.location.hostname === 'localhost';
