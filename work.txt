@@ -2,13 +2,13 @@ stuarthadfield.com
 =========
 
 Stuart Hadfield
-Software Development Engineer
+Software Engineer
 
 Languages Proficient:
 -------
 
-* Ruby / Ruby on Rails
-* Python / Django
+* Ruby
+* Python
 * JS / React
 * PHP
 * C / C++
@@ -17,7 +17,6 @@ Contact
 -------
 
 * stuartdhadfield at gmail dot com
-* shadfield at gocardless dot com
 * stuarthadfield on github.com
 * @stuart on ZATech Slack community
 
